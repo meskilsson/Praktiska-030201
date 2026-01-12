@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Button from "../Buttons/Button";
+import './forms.css';
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -19,6 +20,11 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Formulär data', formData);
+        setFormData({
+            name: "",
+            email: "",
+            message: ""
+        });
     };
 
     return (

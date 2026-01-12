@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ger lite luft runt hela sidan */
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+/* Gemensam spacing för varje sektion */
+.counter-container,
+.contact-form-container,
+.registration-form-container {
+    margin-bottom: 40px;
+}
+
+/* Valfritt: lite maxbredd så formulär inte blir för breda */
+.contact-form-container,
+.registration-form-container {
+    max-width: 400px;
+}

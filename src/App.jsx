@@ -1,7 +1,8 @@
 
 import './App.css'
 import Counter from './components/Counter/Counter'
-import ContactForm from './components/ContactForm/ContactForm'
+import ContactForm from './components/Forms/ContactForm'
+import RegistrationForm from './components/Forms/RegistrationForm'
 
 function App() {
 
@@ -16,7 +17,9 @@ function App() {
         <ContactForm />
       </div>
 
-
+      <div className="registration-form-container">
+        <RegistrationForm />
+      </div>
 
     </>
   )
